@@ -1,0 +1,179 @@
+
+body{
+    font-family: 'Raleway', sans-serif;
+}
+
+.col1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40%;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+
+}
+.bgimg{
+    left: 0;
+    top: 0;
+    position: absolute;
+    height: 130vh;
+    width: 40vw;
+    z-index: -10;
+    
+    
+}
+ .logo{
+     position: absolute;
+    left: 45vw;
+    top: 5vh;
+    height: 6vh;
+    width: 7vw;
+}
+.fb{
+    position: absolute;
+    left: 85vw;
+    top: 5vh;
+    height: 4vh;
+    width: 2.5vw;
+}
+.mail{ position: absolute;
+    left: 90vw;
+    top: 5vh;
+    height: 4vh;
+    width: 2.5vw;
+}
+.twitter{ position: absolute;
+    left: 80vw;
+    top: 5vh;
+    height: 4vh;
+    width: 2.5vw;
+}
+.col2{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.head{
+    margin: 5%;
+}
+
+.image{
+    display: inline-block;
+    margin: 1%;
+
+}
+
+.content{
+    position: absolute;
+    top: 27vh;
+    left: 45vw;
+    margin: auto;
+ 
+    
+}
+.up{font-size: 5vh;
+
+}
+.body{
+   
+    font-size: 3vh;
+}
+
+.button{
+    position: absolute;
+    background-color: #4CAF50;
+       text-align: center;
+     padding:1%1%; 
+       font-size: 80%; 
+    width: 6vw;
+    height: 4vh;
+    font-family: 'Raleway', sans-serif;
+   
+   
+}
+
+.textfield{
+    width: 20vw;
+    height: 3vh;
+position: absolute;
+left: 7vw;
+
+}
+
+.footer{
+    position: absolute;
+    width: 30vh;
+    font-size: 2vh;
+    float: right;
+    margin:3%;
+    left: 40vw;
+    top: 60vh;
+
+}
+
+.image3{
+
+    display: block;
+    margin: 10vh auto;
+    width: 80%;
+    height: 70%;
+}
+
+/*for mobile phones*/
+
+
+
+@media screen and (max-width: 500px) 
+{
+    .col1{position: absolute;
+        top: 0;
+        left: 0;
+        height:70vh;
+        width:100vw
+
+
+    }
+    .bgimg{
+       top: 0;
+       left: 0;
+       height: 70vh;
+       width: 100vw;
+   }
+   .logo{
+       position: absolute;
+       top: 3vh;
+       left: 5vw;
+       height: 4.5vh;
+       width: 20vw;
+   }
+   
+   .content{
+       position:absolute;
+       width: 90vw;
+       left: 5vw;
+       top: 70vh;
+   }
+  .image3{
+      position: absolute;
+      top:0;
+      left: 20vw;
+      height: 50vh;
+      width: 60vw;
+  }
+  .button{
+ position: absolute;
+ width: 14vw;
+ 
+  }
+  .textfield{
+      position: absolute;
+      left: 15vw;
+      width: 35vw;
+  }
+  .footer{position: absolute;
+    left: 70vw;
+
+  }
+
+}
