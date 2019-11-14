@@ -1,0 +1,39 @@
+<html>
+<head>
+<title></title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+    <div>
+<input type="text" id="username" name="username"><br><br>
+<input type="password" id="password" name="password"><br><br>
+<input type="button" onclick=" myfunction() " value="login"/>
+</div>
+
+<script>
+     function myfunction() {
+        var postdata = {
+        name: document.getElementById('username').val,
+       job: document.getElementById('password').val  
+        };
+        var obj = JSON.stringify('postdata');
+    
+  let xhttp = new XMLHttpRequest();
+  xhttp.open('POST', 'https://reqres.in/api/register', true);
+  xhttp.setRequestHeader("Content-type","application/json");
+    xhttp.onload = function(){
+     if (this.readyState == 4 && this.status == 200) {
+        console.log(this.responseText);
+       document.getElementById("random").innerHTML = this.responseText;
+     
+      }
+      }
+     
+      xhttp.send(obj);
+      }
+     
+      
+    </script>
+</body>
+</html>
